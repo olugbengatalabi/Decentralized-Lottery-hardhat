@@ -1,0 +1,4 @@
+Enter the lottery after paying some amount
+Pick a random winner (verifyable random)
+winner to be selected every x minutes
+chainlink oracle
