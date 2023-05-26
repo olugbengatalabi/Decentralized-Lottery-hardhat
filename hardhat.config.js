@@ -1,12 +1,40 @@
-require("@nomiclabs/hardhat-waffle");
-require("@nomiclabs/hardhat-etherscan");
-require("hardhat-deploy");
-require("solidity-coverage");
-require("hardhat-gas-reporter");
-require("hardhat-contract-sizer");
-require("dotenv").config();
+require("@nomiclabs/hardhat-waffle")
+require("@nomiclabs/hardhat-etherscan")
+require("hardhat-deploy")
+require("solidity-coverage")
+require("hardhat-gas-reporter")
+require("hardhat-contract-sizer")
+require("dotenv").config()
 
+const SEPOLIA_RPC_URL = process.env.SEPOLIA_RPC_URL || "https://eth-sepolia/example"
+const PRIVATE_KEY = process.env.PRIVATE_KEY || "canee;nevmpevmb"
+const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || "dagbr"
+const COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY || "asbsrbrbrb"
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  solidity: "0.8.8",
-};
+    solidity: "0.8.8",
+    networks: {
+        hardhat: {
+            chainId: 31337,
+            blockConfirmations: 1,
+        },
+        sepolia: {
+            url: SEPOLIA_RPC_URL,
+            accounts: PRIVATE_KEY !== undefined ? [PRIVATE_KEY] : [],
+            //   accounts: {
+            //     mnemonic: MNEMONIC,
+            //   },
+            saveDeployments: true,
+            chainId: 11155111,
+            blockConfirmations: 6,
+        },
+    },
+    namedAccounts: {
+        deployer: {
+            default: 0, // here this will by default take the first account as deployer
+        },
+    },
+    player: {
+        default: 1,
+    },
+}

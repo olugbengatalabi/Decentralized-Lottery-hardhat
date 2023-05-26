@@ -1,0 +1,2 @@
+yarn global add hardhat-shorthand
+yarn add --dev @chainlink/contracts
