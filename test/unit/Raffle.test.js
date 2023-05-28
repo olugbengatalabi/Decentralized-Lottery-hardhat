@@ -3,7 +3,7 @@ const { network, getNamedAccounts, deployments, ethers } = require("hardhat")
 const { developmentChains, networkConfig } = require("../../helper-hardhat-config")
 
 !developmentChains.includes(network.name)
-    ? descibe.skip
+    ? describe.skip
     : describe("Raffle", async () => {
           let raffle, vrfCoordinatorV2Mock, raffleEntranceFee, deployer, interval
           const chainId = network.config.chainId

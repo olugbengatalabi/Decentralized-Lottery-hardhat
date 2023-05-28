@@ -1,6 +1,6 @@
 const { network, ethers } = require("hardhat")
 const { developmentChains, networkConfig } = require("../helper-hardhat-config")
-const {verify} = require('../helper-hardhat-config');
+const {verify} = require("../utils/verify");
 
 
 module.exports = async function ({ getNamedAccounts, deployments }) {
@@ -51,7 +51,7 @@ module.exports = async function ({ getNamedAccounts, deployments }) {
         const vrfCoordinatorV2Mock = await ethers.getContract("VRFCoordinatorV2Mock")
         await vrfCoordinatorV2Mock.addConsumer(subscriptionId, raffle.address)
     }
-    if (!developmentChains.includes(network.name) && process.env.EHERSCAN_API_KEY) {
+    if (!developmentChains.includes(network.name) && process.env.ETHERSCAN_API_KEY) {
         log("verifying")
         await verify(raffle.address, args)
         log(".......................................................done")

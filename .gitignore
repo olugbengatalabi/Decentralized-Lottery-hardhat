@@ -1,2 +1,11 @@
 node_modules/
 .prettierrc
+cache
+artifacts/
+deployments
+coverage
+coverage.json
+typechain-types
+.env
+.txt*
+.DS*
