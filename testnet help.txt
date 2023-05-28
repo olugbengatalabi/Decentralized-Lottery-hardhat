@@ -1,0 +1,5 @@
+1. Get our subId for chainlink VRF
+2. Deploy the contract using the subId
+3. register the contract with the chainlink vrf and it's subId
+4. register the contract with chainlink keepers
+5. run the staging test

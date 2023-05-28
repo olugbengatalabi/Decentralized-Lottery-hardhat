@@ -48,6 +48,48 @@
         "Raffle"
       ]
     },
+    "/home/olugbenga/FCC_smart_contract/Decentralized-Lottery-hardhat/node_modules/hardhat/console.sol": {
+      "lastModificationDate": 1684711301513,
+      "contentHash": "4ff3cd2f6272c9a6516e9ee4f2b967d3",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.8.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">= 0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
     "/home/olugbenga/FCC_smart_contract/Decentralized-Lottery-hardhat/node_modules/@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol": {
       "lastModificationDate": 1684796390318,
       "contentHash": "eb9cc526ef59dfc4d644f56ddca0633a",
@@ -130,48 +172,6 @@
       ],
       "artifacts": [
         "VRFCoordinatorV2Interface"
-      ]
-    },
-    "/home/olugbenga/FCC_smart_contract/Decentralized-Lottery-hardhat/node_modules/hardhat/console.sol": {
-      "lastModificationDate": 1684711301513,
-      "contentHash": "4ff3cd2f6272c9a6516e9ee4f2b967d3",
-      "sourceName": "hardhat/console.sol",
-      "solcConfig": {
-        "version": "0.8.8",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">= 0.4.22 <0.9.0"
-      ],
-      "artifacts": [
-        "console"
       ]
     },
     "/home/olugbenga/FCC_smart_contract/Decentralized-Lottery-hardhat/node_modules/@chainlink/contracts/src/v0.8/interfaces/AutomationCompatibleInterface.sol": {
